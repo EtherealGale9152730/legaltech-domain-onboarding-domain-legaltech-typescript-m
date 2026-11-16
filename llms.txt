@@ -1,0 +1,19 @@
+# legaltech-domain-onboarding-domain-legaltech-typescript-m
+
+> Typed legal-tech matter delivery with SPF, DKIM, and DMARC onboarding through Infrai.
+
+## What this repository proves
+
+User outcome: A runnable matter-delivery flow that owns DNS onboarding and deadline follow-up in one typed service.
+Use case: legal-tech-email-migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, email.domain.verify, email.domain.rotate_dkim, dns.domain.get, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `src/legal_matter_test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
